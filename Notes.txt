@@ -1,0 +1,46 @@
+>>We are going to bootstrap our application with create-react-app and we are going to setit to use typescript.
+
+>>Go to this website, you can see here they mentioned how to include typescript in the react app.Instead of my-app, you can give your own name.
+  -->https://create-react-app.dev/docs/adding-typescript/
+
+  -->npx create-react-app my-app --template typescript
+
+# or
+
+ -->yarn create react-app my-app --template typescript
+
+>>Once app folder created with all the setup. cd to the app folder.
+  -->cd react-typescript-quiz
+
+>>Now, we need to clean our folder littile bit.Inside src folder, we can clean some files like setupTest.ts,serviceworker.ts if available,logo.svg,index.css,App.test.tsx,App.css
+
+>>We can do some refactoring/cleanup in index.tsx file. Remove the below lines:
+  -->import './index.css';
+  -->import reportWebVitals from './reportWebVitals';
+  -->import * as serviceworker from './serviceworker'; (if available)
+  --->// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
+
+
+>>In App.tsx file,remove the below lines: 
+  -->import './App.css';
+  -->import logo from './logo.svg';
+  -->Replace whole header tag with Quiz.
+
+>>Install below package,
+  -->npm i styled-components @types/styled-components
+
+>>Now run npm start to test everything is working or not.
+
+>>Get the backgroung image from unsplash.com
+
+>>Copied google fonts link in index.html.
+
+>>For the quiz, go to the below url and select the required options and generate the API URL.
+   -->https://opentdb.com/api_config.php
+
+>>Generated URL, https://opentdb.com/api.php?amount=10
+
+>>
